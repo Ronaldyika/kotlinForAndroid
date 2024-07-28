@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">loginApplication</string>
+    <string name="Yika_login">Yika login</string>
+    <string name="Login_App">Login credentials</string>
 </resources>
