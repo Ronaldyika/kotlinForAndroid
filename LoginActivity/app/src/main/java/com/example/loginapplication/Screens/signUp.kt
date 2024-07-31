@@ -13,9 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.loginapplication.Components.HeadingTextMain
-import com.example.loginapplication.Components.NormalTextComponent
-import com.example.loginapplication.Components.myTextField
+import com.example.loginapplication.Components.*
 import com.example.loginapplication.R
 
 @Composable
@@ -27,14 +25,16 @@ fun SignUpScreen(){
         .padding(28.dp),
     ) {
         Column(
-            modifier =Modifier.fillMaxSize()
+            modifier =Modifier
                 .background(Color.White),
             verticalArrangement = Arrangement.SpaceEvenly,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            NormalTextComponent(value = stringResource(id = R.string.Yika_login),)
-            HeadingTextMain(value = stringResource(id = R.string.Login_App))
+            NormalTextComponent(value = stringResource(id = R.string.Yika_login), title =stringResource(id = R.string.Login_App) )
             myTextField()
+            Emailfield()
+            passwordField()
+            Buttonfunction()
         }
     }
 
